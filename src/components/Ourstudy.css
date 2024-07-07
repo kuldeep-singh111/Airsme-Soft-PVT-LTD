@@ -1,0 +1,158 @@
+.container {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 70px;
+}
+
+.header .title {
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.header .title .highlight {
+  color: orange;
+}
+
+.header .subtitle {
+  color: #777;
+  margin-top: 10px;
+}
+
+.case-studies {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.case-study-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 48%;
+  height: auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.case-study-image {
+  width: 100%;
+  height: auto; 
+  max-height: 350px; 
+  object-fit: cover; 
+}
+
+.case-study-card .content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.case-study-card h3 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.case-study-card p {
+  color: #555;
+  margin: 15px 0;
+  flex-grow: 1; 
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.tag {
+  background: orange;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+.read-more {
+  background: none;
+  border: 2px solid orange;
+  color: orange;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1em;
+  transition: all 0.3s ease;
+  align-self: flex-start; 
+}
+
+.read-more:hover {
+  background: orange;
+  color: white;
+}
+
+.view-more {
+  background-color: orange;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  cursor: pointer;
+  margin-top: 40px;
+  border-radius: 5px;
+  font-size: 1em;
+  margin-left: 55px;
+}
+
+@media (max-width: 992px) {
+  .case-studies {
+      gap: 10px;
+  }
+
+  .case-study-card {
+      width: 100%; 
+  }
+}
+
+@media (max-width: 768px) {
+  .case-studies {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+  }
+
+  .case-study-card {
+      max-width: 100%; 
+      height: auto; 
+  }
+
+  .case-study-image {
+      height: auto; 
+  }
+}
+
+@media (max-width: 480px) {
+  .header .title {
+      font-size: 1.5em;
+  }
+
+  .header .subtitle {
+      font-size: 0.9em; 
+  }
+
+  .read-more {
+      font-size: 0.9em;
+  }
+
+  .view-more {
+      font-size: 0.9em;
+  }
+}
